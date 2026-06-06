@@ -27,13 +27,9 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Grant Maven Wrapper permission
-        run: chmod +x mvnw
-
       - name: Build Spring Boot project
-        run: ./mvnw clean package -DskipTests
+        run: mvn clean package -DskipTests
 
-     
       - name: Verify build output
         run: ls -lah target/
 
