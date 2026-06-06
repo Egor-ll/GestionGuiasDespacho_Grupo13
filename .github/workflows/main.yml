@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      DOCKER_IMAGE: ladyred/gestionguiasdespacho:latest
+      DOCKER_IMAGE: egorll/gestionguiasdespacho:latest
 
     steps:
       # 1. Código
