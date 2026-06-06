@@ -10,7 +10,7 @@ services:
       - .env
 
     volumes:
-      - "/home/natalia/Archivos/Desarrollo Cloud Native/Wallets Registradas/Wallet_Semana3:/app/wallet:ro"
-      - "/mnt/efs/guias:/mnt/efs/guias"
+      - "/home/natalia/wallets/Wallet_Semana3:/app/wallet:ro"
+      - "./guias:/mnt/efs/guias"
 
     restart: "no"
